@@ -1,0 +1,538 @@
+/* paleta de colores #f82214 rojo claro,  #7F0000 rojo mas profundo , #ffa100 amarillo profundo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Dosis:wght@200..800&family=Fugaz+One&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth; 
+}
+/* Estilo de cabecera  */
+header{
+    width: 100%;
+    background: url("../img/bg-header.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-bottom: 120px;
+}
+header nav{
+    width: 90%;
+    background: #ffa100;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+header nav #logo{
+    font-family: "Bebas Neue", sans-serif; 
+    color: white;
+    width:200px ;
+    height:190px;
+    text-align:center;
+    border-radius: 3px;  
+}
+header nav ul {
+    display: flex;
+    align-items: center;   
+}
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    border-color: #7F0000;
+}
+
+nav li a{
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    border-color: #7F0000;
+    color:  #000;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .5s;
+    cursor: pointer;
+}
+nav li a:hover{
+    border-bottom: 4px solid  #fff9e1;
+}
+#hero{
+    /* background: red; */
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom:80px ;
+}
+#hero h2{
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: #7F0000;
+    background: #ffa100;
+}
+#hero h1{
+    font-size: 30px;
+    color: #FFD700;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+    background: #7F0000;
+}
+#hero button{
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #ffa100;
+    font-size: 30px;
+    padding: 12px 30px;
+    border-radius: 14px;
+    color:#272726 ;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#hero button:hover{
+    transform: scale(0.9);
+}
+
+#logo img{
+    transition: .5s;
+    cursor: pointer;
+}
+#logo img:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+/* Estilo desayunos  */
+
+main {
+    width: 100%;
+    position: relative;
+}
+#desayunos{
+    width: 100%;
+    background: #fff9e1;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+#desayunos h2 {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 50px;
+    background: #ffa100;
+}
+#desayunos p{
+    font-size: 22px;
+}
+#desayunos .fila{
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px;
+}
+#desayunos .col-desa{
+    position: relative;
+}
+#desayunos .col-desa h3{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    right: 0;
+    text-align: center;
+    color: #000000;
+    background: #ffa100;
+}
+#desayunos .col-desa img{
+    transition: .5s;
+    cursor: pointer;
+}
+#desayunos  .col-desa img:hover {
+    border-radius: 20%;
+}
+
+/* Estilo de los almuerzos */
+
+#almuerzos {
+    background: url(../img/almuerzos/bg-almuerzos.png) ;  
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#almuerzos h2{
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 60px;
+    background: #ffa100;
+}
+#almuerzos img{
+    border-radius: 10px 40px;
+}
+#almuerzos .fila{
+    height: 80%;
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+#almuerzos .col-almu h3{
+    background: #FFD700;
+    font-size: 35px;
+}
+.col-almu img{
+    margin-bottom: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+.col-almu img:hover{
+    transform: rotate(-6deg);
+}
+
+/* Estilo especiales  */
+#especiales{
+    width: 100%;
+    background: #ffa100;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+#especiales h2 {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin-bottom: 50px;
+    background: #7F0000;
+}
+#especiales p{
+    font-size: 30px;
+    background: #fff9e1;
+}
+#especiales img{
+    border-radius: 25%;
+}
+#especiales .fila{
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px;
+}
+#especiales .col-espe{
+    position: relative;
+}
+#especiales .col-espe h3{
+    position: absolute;
+    top: 140px;
+    left: 0px;
+    right: 0;
+    text-align: center;
+    color: #000000;
+    background: #FFD700;
+    border-radius: 15%;
+}
+#especiales .col-espe img{
+    transition: .5s;
+    cursor: pointer;
+}
+#especiales  .col-espe img:hover {
+    transform: scale(1.2) ;
+}
+
+/* Estilo para comidas Rapidas */
+#comidas-rapidas {
+    background: url("../img/comidas rapidas/bg-comidasRapidas.png") ;  
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#comidas-rapidas h2{
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 60px;
+    background: #ffa100;
+}
+#comidas-rapidas p{
+    font-size: 30px;
+    background: #ffa100;
+    padding-bottom: 10px;
+}
+#comidas-rapidas img{
+    border-radius: 40px 10px;
+}
+#comidas-rapidas .fila{
+    height: 80%;
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+#comidas-rapidas .col-rapi h3{
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #FFD700;
+    font-size: 35px;
+    margin-bottom: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+#comidas-rapidas .col-rapi h3:hover{
+    transform: scale(1.1);
+}
+.col-rapi img{
+    margin-bottom: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+.col-rapi img:hover{
+    transform: rotate(8deg);
+}
+
+/* Estilo de postres */
+#postres {
+    background: #fff9e1;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#postres .fila{
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px;
+}
+#postres h2 {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin-bottom: 50px;
+    background: #ffa100;
+}
+#postres{
+    font-size: 22px;
+}
+#postres p{
+    font-size: 22px;
+}
+#postres .col-pos img{
+    border-radius: 50%;
+}
+#postres .col-pos{
+    position: relative;
+}
+#postres .col-pos h3{
+    position: absolute;
+    top: 138px;
+    left: 0px;
+    right: 0;
+    text-align: center;
+    color: #000000;
+    background: #ffa100;
+}
+#postres .col-pos img{
+    transition: .5s;
+    cursor: pointer;
+}
+#postres  .col-pos img:hover {
+    border-radius: 20%;
+}
+
+/* Estilo bebidas */
+#bebidas {   
+    background: url("../img/bebidas/bg-bebidas.png") ;  
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#bebidas h2 {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 50px;
+    background: #ffa100;
+}
+#bebidas p{
+    font-size: 22px;
+    background: #ffa100;
+}
+#bebidas .fila{
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px;
+}
+#bebidas .col-bebi{
+    position: relative;
+}
+#bebidas .col-bebi h3{
+    position: absolute;
+    top: 145px;
+    left: 0px;
+    right: 0;
+    text-align: center;
+    color: #000000;
+    background: #ffa100;
+}
+#bebidas .col-bebi img{
+    border-radius: 45%;
+    transition: .5s;
+    cursor: pointer;
+}
+#bebidas  .col-bebi img:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* Estilos contactos */
+
+#contacto{
+    width: 100%;
+    position: relative;
+    background: #ffa100;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+#contacto h2{
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+#contacto p{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#contacto form {
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+#contacto .fila{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#contacto input,
+#contacto select{
+    width: 48%;
+    padding: 12px 20px;
+    margin: 10px 0;
+}
+#contacto button{
+    background: #7F0000;
+    color: #fff9e1;
+    font-size: 26px;
+    padding: 6px 30px;
+    border-radius: 4px;
+    margin-top: 40px;
+    border-color: transparent;
+}
+
+/* Estilos del pie de pagina*/
+footer{
+    background-color:#7F0000;
+    color: #fff9e1;
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+}
+
+/* Tablets Iplas */
+@media screen and (min-width: 768px) and (max-width: 990px){
+    /* header{
+        background: red;
+    } */
+}
+/* Phones */
+@media screen and (min-width: 320px) and (max-width: 767px){
+    /* header{
+        background: #000;
+    } */
+    header nav{
+        display: block;
+        text-align: center;
+        width: 97%;
+    }
+    header nav ul{
+        margin-top: 30px;
+    }
+    nav li a{
+        font-size: 20px;
+    }
+    #hero h2 {
+        font-size: 36px;
+    }
+    #hero h1{
+        font-size: 26px;
+    }
+    #hero button{
+        font-size: 18px;
+        padding: 8px 14px;
+    }
+    #desayunos .fila{
+        display: block;
+    }
+    #desayunos h2{
+        font-size: 36px;
+    }
+    #desayunos p{
+        font-size: 26px;
+    }
+    #desayunos .col-plan {
+        margin: 20px;
+    }
+    #almuerzos .fila{
+        display: block;
+    }
+    #especiales .fila{
+        display: block;
+    }
+    #comidas-rapidas .fila{
+        display: block;
+    }
+    #postres .fila{
+        display: block;
+    }
+    #bebidas .fila{
+        display: block;
+    }
+    #contacto .fila{
+        display: block;
+    }
+    #contacto input,
+    #contacto select{
+        width: 100%;
+        display: block;
+    }
+}
